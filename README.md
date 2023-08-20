@@ -29,12 +29,12 @@ __Some code snippets and documentation resources for Grand Theft Auto games.__
 <br/>
 
 ### Redux Mods Descriptions
-[**Taxi Mod**](https://github.com/WastedHymn/Grand-Theft-Auto-Modding-Source/tree/master/MOD%20Taxi%20Mod%20(GTA%20VC%20Classic)) **->** Taxi mod for GTA Vice City (Classic).<br/>
-[**Weapon Store Mod**](https://github.com/WastedHymn/Grand-Theft-Auto-Modding-Source/tree/master/VC_DE_MOD_Weapon%20Store%20Mod%20(Definitive)) **->** Weapon Store mod for GTA Vice City (Definitive Edition).<br/>
-[**Radar Zoom ReVC**](https://github.com/WastedHymn/Grand-Theft-Auto-Modding-Source/tree/master/MOD%20Radar%20Zoom%20(GTA%20ReVC)) **->** Radar zoom mod for GTA Vice City (ReVC). <br/>
-[**Radar Zoom Re3**](https://github.com/WastedHymn/Grand-Theft-Auto-Modding-Source/tree/master/MOD%20Radar%20Zoom%20(GTA%20Re3)) **->** Radar zoom mod for GTA 3 (Re3). <br/>
-[**Radio Station Font Changer Classic**](https://github.com/WastedHymn/Grand-Theft-Auto-Modding-Source/tree/master/MOD%20Radio%20Station%20Font%20Changer%20(GTA%20VC%20Classic)) **->** Font change script for the radio station names. Works with GTA Vice City (Classic).<br/>
-[**Radio Station Font Changer ReVC**](https://github.com/WastedHymn/Grand-Theft-Auto-Modding-Source/tree/master/MOD%20Radio%20Station%20Font%20Changer%20(GTA%20ReVC)) **->** Font change script for the radio station names. Works with GTA Vice City(ReVC).
+[**Taxi Mod**](https://github.com/yuksel-kadir/Grand-Theft-Auto-Modding-Source/tree/master/MOD%20Taxi%20Mod%20(GTA%20VC%20Classic)) **->** Taxi mod for GTA Vice City (Classic).<br/>
+[**Weapon Store Mod**](https://github.com/yuksel-kadir/Grand-Theft-Auto-Modding-Source/tree/master/VC_DE_MOD_Weapon%20Store%20Mod%20(Definitive)) **->** Weapon Store mod for GTA Vice City (Definitive Edition).<br/>
+[**Radar Zoom ReVC**](https://github.com/yuksel-kadir/Grand-Theft-Auto-Modding-Source/tree/master/MOD%20Radar%20Zoom%20(GTA%20ReVC)) **->** Radar zoom mod for GTA Vice City (ReVC). <br/>
+[**Radar Zoom Re3**](https://github.com/yuksel-kadir/Grand-Theft-Auto-Modding-Source/tree/master/MOD%20Radar%20Zoom%20(GTA%20Re3)) **->** Radar zoom mod for GTA 3 (Re3). <br/>
+[**Radio Station Font Changer Classic**](https://github.com/yuksel-kadir/Grand-Theft-Auto-Modding-Source/tree/master/MOD%20Radio%20Station%20Font%20Changer%20(GTA%20VC%20Classic)) **->** Font change script for the radio station names. Works with GTA Vice City (Classic).<br/>
+[**Radio Station Font Changer ReVC**](https://github.com/yuksel-kadir/Grand-Theft-Auto-Modding-Source/tree/master/MOD%20Radio%20Station%20Font%20Changer%20(GTA%20ReVC)) **->** Font change script for the radio station names. Works with GTA Vice City(ReVC).
 <br/>
 
 ### Tools
@@ -47,12 +47,12 @@ __Some code snippets and documentation resources for Grand Theft Auto games.__
 [**IMG Factory 1.2**](https://libertycity.net/files/gta-vice-city/102592-img-factory-1.2.html) **->** GXT Editor for GTA 3, Vice City, San Andreas classic versions.<br/>
 
 ### ASI Mods Descriptions
-[**Taxi Mod**](https://github.com/WastedHymn/Grand-Theft-Auto-Modding-Source/tree/master/ASI%20MOD%20Taxi%20Mod%20(GTA%20III%20Classic)) **->** Taxi mod for GTA III (Classic).<br/>
-[**Taxi Mod**](https://github.com/WastedHymn/Grand-Theft-Auto-Modding-Source/tree/master/ASI%20MOD%20Taxi%20Mod%20(GTA%20VC%20Classic)) **->** Taxi mod for GTA Vice City (Classic).<br/>
-[**Radar Zoom III**](https://github.com/WastedHymn/Grand-Theft-Auto-Modding-Source/tree/master/ASI%20MOD%20Radar%20Zoom%20(GTA%20III%20Classic)) **->** Radar zoom mod for GTA III.<br/>
-[**Radar Zoom VC/LCS**](https://github.com/WastedHymn/Grand-Theft-Auto-Modding-Source/tree/master/ASI%20MOD%20Radar%20Zoom%20(GTA%20VC%20Classic%20-%20GTA%20ReLCS)) **->** Radar zoom mod for GTA Vice City (Classic) and GTA ReLCS Beta 6.0. <br/>
-[**Save Anywhere**](https://github.com/WastedHymn/Grand-Theft-Auto-Modding-Source/tree/master/ASI%20MOD%20Save%20Anywhere%20(GTA%20VC%20Classic)) **->** Save anywhere when you are not on a mission for GTA Vice City Classic.<br/>
-[**Quick Save**](https://github.com/WastedHymn/Grand-Theft-Auto-Modding-Source/tree/master/ASI%20MOD%20Quick%20Save%20(GTA%20III%20Classic)) **->** Quick Save mod for GTA III.
+[**Taxi Mod**](https://github.com/yuksel-kadir/Grand-Theft-Auto-Modding-Source/tree/master/ASI%20MOD%20Taxi%20Mod%20(GTA%20III%20Classic)) **->** Taxi mod for GTA III (Classic).<br/>
+[**Taxi Mod**](https://github.com/yuksel-kadir/Grand-Theft-Auto-Modding-Source/tree/master/ASI%20MOD%20Taxi%20Mod%20(GTA%20VC%20Classic)) **->** Taxi mod for GTA Vice City (Classic).<br/>
+[**Radar Zoom III**](https://github.com/yuksel-kadir/Grand-Theft-Auto-Modding-Source/tree/master/ASI%20MOD%20Radar%20Zoom%20(GTA%20III%20Classic)) **->** Radar zoom mod for GTA III.<br/>
+[**Radar Zoom VC/LCS**](https://github.com/yuksel-kadir/Grand-Theft-Auto-Modding-Source/tree/master/ASI%20MOD%20Radar%20Zoom%20(GTA%20VC%20Classic%20-%20GTA%20ReLCS)) **->** Radar zoom mod for GTA Vice City (Classic) and GTA ReLCS Beta 6.0. <br/>
+[**Save Anywhere**](https://github.com/yuksel-kadir/Grand-Theft-Auto-Modding-Source/tree/master/ASI%20MOD%20Save%20Anywhere%20(GTA%20VC%20Classic)) **->** Save anywhere when you are not on a mission for GTA Vice City Classic.<br/>
+[**Quick Save**](https://github.com/yuksel-kadir/Grand-Theft-Auto-Modding-Source/tree/master/ASI%20MOD%20Quick%20Save%20(GTA%20III%20Classic)) **->** Quick Save mod for GTA III.
 <br/>
 
 ### Useful Links
