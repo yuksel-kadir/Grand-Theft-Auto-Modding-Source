@@ -3,6 +3,7 @@
 #include "CHud.h"
 #include "CFont.h"
 #include "TextUtils.h"
+#include "TaxiUtils.h"
 #include "Destinations.h"
 
 //COLORS
@@ -33,13 +34,37 @@ void TextUtils::SetTextInfo(TextInformation& textInfo, std::string& text, CRGBA&
 }
 //Cycle previous destination.
 void TextUtils::PreviousDestination(int8_t& destinationIndex) {
-    destinationIndex -= 1;
+    if (destinationIndex == 0) {
+        bool checkViceCityMainLand = TaxiUtils::CheckBridgeStatus(Destinations::destinationInformationList[Destinations::destinationArraySize - 1].globalVariableId);
+        if (checkViceCityMainLand) {
+            destinationIndex = Destinations::destinationArraySize - 1;
+        }
+        else {
+            destinationIndex = 11;
+        }
+    }
+    else {
+        destinationIndex -= 1;
+    }
+    
     if (destinationIndex < 0)
         destinationIndex = Destinations::destinationArraySize - 1;
 }
 //Cycle next destination.
 void TextUtils::NextDestination(int8_t& destinationIndex) {
-    destinationIndex += 1;
+    if (destinationIndex == 11) {
+        bool checkViceCityMainLand = TaxiUtils::CheckBridgeStatus(Destinations::destinationInformationList[destinationIndex+1].globalVariableId);
+        if (checkViceCityMainLand) {
+            destinationIndex += 1;
+        }
+        else {
+            destinationIndex = 0;
+        }
+    }
+    else {
+        destinationIndex += 1;
+    }
+    
     if (destinationIndex >= Destinations::destinationArraySize)
         destinationIndex = 0;
 }
@@ -119,7 +144,7 @@ void TextUtils::PrintText(std::string text, CRGBA textColor, eTextPosition textP
         break;
     default:
         break;
-    }    
+    }
 
     CFont::SetBackgroundOff();
     CFont::SetScale(fontScaleX, fontScaleY);

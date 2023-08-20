@@ -26,6 +26,7 @@ public:
     static const int8_t S_KEY = 0x53;
     static const int8_t T_KEY = 0x54;
     static const int8_t W_KEY = 0x57;
+
     static const int DESTINATION_TEXT_DURATION = 10000;
     static const int CONFIRMED_DESTINATION_TEXT_DURATION = 5000;
 
@@ -100,6 +101,7 @@ public:
         };
 
         Events::drawHudEvent += [] {
+            
             std::string goingToDestMsg = "Going to Destination: " + std::to_string(TaxiUtils::taxiStatus.goingToDestination);
             TextUtils::DisplayDebugText(goingToDestMsg, 625);
             std::string cabFareMsg = "CabFare: " + std::to_string(TextUtils::cabFareTextInfo.showText);
@@ -126,7 +128,7 @@ public:
             TextUtils::DisplayDebugText(everSelectedDestMsg, 425);
             std::string fontIndexMsg = "Font Index: " + std::to_string(TextUtils::destinationTextInfo.fontIndex);
             TextUtils::DisplayDebugText(fontIndexMsg, 400);
-
+            
 
             if (TextUtils::destinationTextInfo.showText)
                 TextUtils::PrintText(TextUtils::destinationTextInfo.text, TextUtils::destinationTextInfo.textColor, TextUtils::destinationTextInfo.textPosition);
@@ -307,7 +309,7 @@ public:
                         }
                     }
                 }
-                else if (playerped->m_ePedState == ePedState::PEDSTATE_CAR_JACK || playerped->m_ePedState == ePedState::PEDSTATE_EXIT_CAR) {
+                else if (playerped->m_ePedState == ePedState::PED_DRAG_FROM_CAR || playerped->m_ePedState == ePedState::PEDSTATE_EXIT_CAR) {
                     if (pTaxi != NULL) {
                         TaxiManager::ResetPlayerWantedSettings(playerped);
                         TaxiManager::ResetSettings(playerped, pTaxi);

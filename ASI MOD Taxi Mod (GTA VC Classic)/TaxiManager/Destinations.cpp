@@ -1,6 +1,7 @@
 #include "Destinations.h"
 
 DestinationInformation Destinations::destinationInformationList[26] = {
+	//VICE CITY BEACH
 	DestinationInformation("Ken Rosenburg's Office", CVector(108.80f, -813.16f, 11.04f), 2.55f, -1),
 	DestinationInformation("Rafael's", CVector(105.17f, -1117.22f, 11.07f), 4.69f, -1),
 	DestinationInformation("Ocean Bay Marina", CVector(-166.64f, -1443.76f, 11.56f), 3.5f, -1),
@@ -13,6 +14,7 @@ DestinationInformation Destinations::destinationInformationList[26] = {
 	DestinationInformation("Diaz's Mansion", CVector(-281.09f, -469.86f, 11.95), 1.6f, 903),
 	DestinationInformation("North Point Mall", CVector(488.52f, 1122.98f, 17.23f), 3.03f, -1),
 	DestinationInformation("InterGlobal Studios", CVector(19.76f, 972.32f, 11.55f), 3.0f, -1),
+	//VICE CITY MAIN LAND
 	DestinationInformation("Ammu-Nation Downtown", CVector(-659.21f, 1194.73f, 11.78f), 1.5f, 847),
 	DestinationInformation("V-Rock Recording Studio", CVector(-863.79f, 1151.79f, 11.98f), 3.0f, 847),
 	DestinationInformation("Hyman Condo", CVector(-862.46f, 1291.98f, 12.35f), 0.0f, 847),
