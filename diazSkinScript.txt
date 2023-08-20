@@ -1,0 +1,71 @@
+{$CLEO .cs}
+0000: NOP 
+
+:label2
+0001: wait 0 ms
+if 
+ 0AB0: key_pressed 0x61//NUMPAD 1 KEY
+then
+    if
+     0256:   player $player_char defined
+     then
+        if 
+            Actor.Driving($PLAYER_ACTOR)//CHECK IF THE PLAYER DRIVING A CAR OR NOT
+            then
+            0002: jump @label2
+            else         
+         0352: set_actor $player_actor skin_to 'IGDIAZ'
+         038B: load_requested_models
+         0353: refresh_actor $player_actor
+         0001: wait 1000 ms
+         0002: jump @label2
+         end
+       end     
+else
+0002: jump @label2
+end
+
+/*
+while true
+0001: wait 1000 ms 
+if
+  0AB0: key_pressed 0x01
+ then
+         if
+           0256:   player $player_char defined 
+        then
+           0352: set_actor $player_actor skin_to 'PLAYER2'
+           //end 
+            //if
+             //   0256:   player $player_char defined
+            //then
+            038B: load_requested_models
+               // if
+               // 0256:   player $player_char defined
+                // then
+                   0353: refresh_actor $player_actor 
+                 //  end
+              end
+    end       
+end
+*/ 
+     
+        //03E5: text_box 'CUNTY'  // New clothes delivered to the Vercetti Estate!
+        // 0352: set_actor $PLAYER_ACTOR skin_to 'PLAYER6' 
+        // 0353: refresh_actor $PLAYER_ACTOR
+        
+        //023C: load_special_actor 999 'IGDIAZ'
+        //03E5: text_box 'CUNTY'  // New clothes delivered to the Vercetti Estate!
+        //if
+        //823D: special_actor 999 loaded
+        //023D:   special_actor 999 loaded
+        //then
+        //03E5: text_box 'CUNTY'  // New clothes delivered to the Vercetti Estate!
+        //wait 0
+        //0352: set_actor $PLAYER_ACTOR skin_to 'IGDIAZ'
+        //        wait 0         
+        //038B: load_requested_models
+        //        wait 0                
+        //0353: refresh_actor $PLAYER_ACTOR
+        //        wait 0 
+        //0296: unload_special_actor 999

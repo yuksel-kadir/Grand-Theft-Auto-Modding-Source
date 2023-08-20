@@ -1,0 +1,87 @@
+{$CLEO .cs}
+/*
+Mod: Hesoyam Cheat
+Author: WastedHymn
+Date: 27.02.2022
+*/
+0000: NOP
+03A4: script_name 'Hesoyam'
+
+:script_start
+0001: wait 100 ms
+00D6: if
+0ADC:   test_cheat "HESOYAM"
+004D: jump_if_false @script_start
+0050: gosub @player_stats         
+jump @check_player_is_in_car
+
+//IF THE PLAYER IS NOT IN THE CAR OR ENTERING THE CAR DO NOT TRY TO REPAIR CAR
+:check_player_is_in_car
+wait 0 ms
+//GET ACTOR STRUCT TO CHECK IF THE PLAYER IS ENTERING THE CAR
+//https://gtamods.com/wiki/Memory_Addresses_(VC)#CPed
+05E6: 17@ = ped $PLAYER_ACTOR struct
+17@ += 0x244
+05E0: 16@ = read_memory 17@ size 1 virtual_protect 0
+if
+    0039:   16@ == 50 // @ == int
+then
+    gosub @in_car
+    jump @script_start
+else
+    jump @script_start
+end
+
+//FIX VEHICLE
+:in_car
+0001: wait 0 ms
+//https://gtamods.com/wiki/0A30
+03C1: 0@ = player $PLAYER_CHAR car_no_save 
+05E7: 1@ = car 0@ struct
+05E7: 2@ = car 0@ struct
+//GET VEHICLE TYPE ADDRESS
+2@+= 0x29C
+0A8D: 2@ = read_memory 2@ size 1 virtual_protect 0
+
+//CHECK IF THE VEHICLE IS A CAR THAN REPAIR
+00D6: if
+0039:   2@ == 0 // @ == int
+then
+    0AA6: call_method 0x588530 struct 1@ num_params 0 pop 0 
+end
+
+//CHECK IF THE VEHICLE IS A BIKE THAN REPAIR BIKE
+00D6: if
+0039:   2@ == 5 // @ == int
+then
+    1@ += 0x204
+    05DF: write_memory 1@ size 4 value 1000.0 virtual_protect 0
+    05E7: 2@ = car 0@ struct
+    05E7: 4@ = car 0@ struct                               
+    2@ += 0x32C
+    0A8C: write_memory 2@ size 1 value 0 virtual_protect 0
+    4@ += 0x32D
+    0A8C: write_memory 4@ size 1 value 0 virtual_protect 0
+    return         
+end
+//ADD VEHICLE HEALTH OFFSET TO THE CAR STRUCT TO CHANGE THE CAR HEALTH OR JUST USE "Car.Health(0@) = 1000"
+1@ += 0x204
+05DF: write_memory 1@ size 4 value 1000.0 virtual_protect 0
+wait 0 ms
+return
+
+//HEAL PLAYER
+:player_stats
+0001: wait 0 ms
+Player.Money($PLAYER_CHAR) += 250000
+//GET THE PLAYER STRUCT AND ADD OFFSETS OF ARMOUR AND HEALTH. THEN WRITE MAX HEALTH VALUE TO THOSE ADDRESSES.
+//CHECK FOR OFFSETS AT https://gtamods.com/wiki/Memory_Addresses_(VC)
+//OR YOU CAN JUST USE "0222: set_player $PLAYER_CHAR health_to 250" AND "035E: set_player $PLAYER_CHAR armour_to 250" 
+05E6: 12@ = ped $PLAYER_ACTOR struct   
+05E6: 13@ = ped $PLAYER_ACTOR struct           
+12@ += 0x354
+13@ += 0x358
+0A8C: write_memory 12@ size 4 value 250.0 virtual_protect 0
+0A8C: write_memory 13@ size 4 value 250.0 virtual_protect 0
+03E5: text_box 'CHEAT1'
+return

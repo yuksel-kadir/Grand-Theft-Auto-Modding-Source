@@ -1,0 +1,6 @@
+﻿  RadarZoom.cpp
+F:\plugin-sdk\projects\radar zoom\RadarZoom\RadarZoom\RadarZoom.cpp(40,34): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+F:\plugin-sdk\projects\radar zoom\RadarZoom\RadarZoom\RadarZoom.cpp(83,31): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Generating code
+  Finished generating code
+  RadarZoom.vcxproj -> C:\Program Files (x86)\Steam\steamapps\common\Grand Theft Auto Vice City\scripts\RadarZoom.VC.asi

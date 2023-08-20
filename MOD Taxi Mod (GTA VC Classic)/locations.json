@@ -1,0 +1,525 @@
+[
+    {
+      "locationIconNumber": 9,
+      "locationName": "LAWKEN",
+      "locationCoordinates":{
+        "x": 106.64,  
+        "y": -813.53,
+        "z": 10.04
+      },
+      "rotation": 145.05,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"lawyer "
+    },
+    {
+      "locationIconNumber": 6,
+      "locationName": "CORTEZ",
+      "locationCoordinates":{
+        "x": -166.64,  
+        "y": -1443.76,
+        "z": 10.56
+      },
+      "rotation": 204.22,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"colonel Colonel"
+    },
+    {
+      "locationIconNumber": 7,
+      "locationName": "DIAZMN",
+      "locationCoordinates":{
+        "x": -281.09, 
+        "y": -469.86, 
+        "z": 10.95
+      },
+      "rotation": 89.70,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"diaz"
+    },
+    {
+      "locationIconNumber": 24,
+      "locationName": "BANKGR",
+      "locationCoordinates":{
+        "x": -869.38, 
+        "y": -325.16, 
+        "z": 10.84
+      },
+      "rotation": 359.41,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"bank"
+    },
+    {
+      "locationIconNumber": 21,
+      "locationName": "CHERRY",
+      "locationCoordinates":{
+        "x": -854.56, 
+        "y": -565.18, 
+        "z": 10.93
+      },
+      "rotation": 186.59,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"ice cream"
+    },
+    {
+      "locationIconNumber": 13,
+      "locationName": "MALIBC",
+      "locationCoordinates":{
+        "x": 504.94, 
+        "y": -92.46, 
+        "z": 10.13
+      },
+      "rotation": 334.69,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"malibu LG_10"
+    },
+    {
+      "locationIconNumber": 28,
+      "locationName": "MALLNP",
+      "locationCoordinates":{
+        "x": 486.76, 
+        "y": 1122.98, 
+        "z": 16.23
+      },
+      "rotation": 352.68,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"north point mall MALL1"
+    },
+    {
+      "locationIconNumber": 24,
+      "locationName": "PRINTW",
+      "locationCoordinates":{
+        "x": -1042.33, 
+        "y": -272.42, 
+        "z": 11.11
+      },
+      "rotation": 180,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"printworks"
+    },
+    {
+      "locationIconNumber": 26,
+      "locationName": "SUNSHI",
+      "locationCoordinates":{
+        "x": -1026.67, 
+        "y": -904.00,
+        "z": 13.86
+      },
+      "rotation": 309.27,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"sunshineautos"
+    },
+    {
+      "locationIconNumber": 19,
+      "locationName": "OCEANH",
+      "locationCoordinates":{
+        "x": 240.62, 
+        "y": -1285.84, 
+        "z": 10.73
+      },
+      "rotation": 349.25,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"ocean view hotel HOTEL"
+    },
+    {
+      "locationIconNumber": 15,
+      "locationName": "FILMST",
+      "locationCoordinates":{
+        "x": 19.76, 
+        "y": 972.32, 
+        "z": 10.55
+      },
+      "rotation": 172.12,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"film studio"
+    },
+    {
+      "locationIconNumber": 16,
+      "locationName": "AMOCEAN",
+      "locationCoordinates":{
+        "x": -53.93, 
+        "y": -1481.91, 
+        "z": 10.24
+      },
+      "rotation": 354.04,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":412,
+        "y":420
+      },
+      "__name__":"ammunation ocean beach LG_13 BEACH1"
+    },
+    {
+      "locationIconNumber": 4,
+      "locationName": "AIRPORT",
+      "locationCoordinates":{
+        "x": -1427.18, 
+        "y": -814.30,
+        "z":  14.70
+      },
+      "rotation": 137.65,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"Escobar Airport A_PORT"
+    },
+    {
+      "locationIconNumber": 27,
+      "locationName": "SPOCEAN",
+      "locationCoordinates":{
+        "x": -18.68, 
+        "y": -1262.94, 
+        "z": 10.27
+      },
+      "rotation": 7.57,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":408,
+        "y":420
+      },
+      "__name__":"PaynSpray Ocean beach BEACH1"
+    },
+    {
+      "locationIconNumber": 22,
+      "locationName": "TAXICAB",
+      "locationCoordinates":{
+        "x": -1014.52,
+        "y":  210.39,
+        "z":  11.02
+      },
+      "rotation": 169.65,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"taxi asset KAUFCAB"
+    },
+    {
+      "locationIconNumber": 19,
+      "locationName": "HYMAN",
+      "locationCoordinates":{
+        "x": -840.70,
+        "y":  1298.25,
+        "z":  11.35
+      },
+      "rotation": 169.65,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"hyman condo"
+    },
+    {
+      "locationIconNumber": 5,
+      "locationName": "BIKERS",
+      "locationCoordinates":{
+        "x": -610.77,
+        "y":  654.57, 
+        "z":  11.17
+      },
+      "rotation": 275.90,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"bikers"
+    },
+    {
+      "locationIconNumber": 10,
+      "locationName": "PHILC",
+      "locationCoordinates":{
+        "x": -998.42,
+        "y":  307.88,
+        "z":  11.14
+      },
+      "rotation":  143.29,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"phil"
+    },
+    {
+      "locationIconNumber": 12,
+      "locationName": "BOAT",
+      "locationCoordinates":{
+        "x": -749.91,
+        "y": -1248.46,
+        "z":  10.88
+      },
+      "rotation":  201.85,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"docks LG_09"
+    },
+    {
+      "locationIconNumber": 28,
+      "locationName": "RAFAEL",
+      "locationCoordinates":{
+        "x": 105.17,
+        "y": -1117.22,
+        "z":  10.07
+      },
+      "rotation":  89.35,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"rafael"
+    },
+    {
+      "locationIconNumber": 4,
+      "locationName": "AVERYC",
+      "locationCoordinates":{
+        "x": 243.74,
+        "y": -229.29,
+        "z":  10.89
+      },
+      "rotation":  334.48,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"avery"
+    },
+    {
+      "locationIconNumber": 23,
+      "locationName": "LOVE",
+      "locationCoordinates":{
+        "x": -865.58,
+        "y": 1152.12,
+        "z":  10.98
+      },
+      "rotation":  168.38,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"love fist"
+    },
+    {
+      "locationIconNumber": 17,
+      "locationName": "AUNT",
+      "locationCoordinates":{
+        "x": -945.55,
+        "y": 122.92,
+        "z":  9.16
+      },
+      "rotation":  2.1,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"haitins"
+    },
+    {
+      "locationIconNumber": 14,
+      "locationName": "CAFE",
+      "locationCoordinates":{
+        "x": -1165.60,
+        "y": -590.14,
+        "z":  11.47
+      },
+      "rotation":  275.20,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"cubans"
+    },
+    {
+      "locationIconNumber": 20,
+      "locationName": "STRIPCL",
+      "locationCoordinates":{
+        "x": 112.57,
+        "y": -1492.80,
+        "z":  10.26
+      },
+      "rotation":  351.71,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":"",
+        "y":""
+      },
+      "__name__":"strip club STPR_8"
+    },
+    {
+      "locationIconNumber": 16,
+      "locationName": "AMDOWN",
+      "locationCoordinates":{
+        "x": -659.21,
+        "y": 1194.73,
+        "z":  10.78
+      },
+      "rotation":  91.86,
+      "locationInfo": "",
+      "nameCoordinates":{
+        "x":320,
+        "y":420 
+      },
+      "locationInfoCoordinates":{
+        "x":420,
+        "y":420
+      },
+      "__name__":"ammunation downtown DTOWN LG_13"
+    }
+  ]
+  
+
+  

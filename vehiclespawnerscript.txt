@@ -1,0 +1,278 @@
+{$CLEO .cs}
+/*
+Mod: Vehicle Spawner 
+Author: WastedHymn 
+Date: 27.02.2022 
+*/
+
+0000: NOP
+
+:script_start
+0001: wait 0 ms
+5@ = #ADMIRAL
+00D6: if
+0256:   player $PLAYER_CHAR defined 
+004D: jump_if_false @script_start
+gosub @check_cheat_code
+jump @script_start
+
+:check_cheat_code
+wait 0 ms
+00D6: if
+0ADC:   test_cheat "Landstalker"
+then     
+    5@ = #LANDSTAL
+    0050: gosub @request_vehicle
+    return   
+end
+
+
+00D6: if
+0ADC:   test_cheat "Idaho"
+then     
+    5@ = #IDAHO
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Stinger"
+then     
+    5@ = #STINGER
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Linerunner"
+then     
+    5@ = #LINERUN    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Perennial"
+then     
+    5@ = #PEREN    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Sentinel"
+then     
+    5@ = #SENTINEL    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Rio"
+then     
+    5@ = #RIO    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Firetruck"
+then     
+    5@ = #FIRETRUK    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Trashmaster"
+then     
+    5@ = #TRASH  
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Stretch"
+then     
+    5@ = #STRETCH    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Manana"
+then     
+    5@ = #MANANA    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Infernus"
+then     
+    5@ = #INFERNUS    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Voodoo"
+then     
+    5@ = #VOODOO    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Mule"
+then     
+    5@ = #MULE    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Cheetah"
+then     
+    5@ = #CHEETAH    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Ambulance"
+then     
+    5@ = #AMBULAN    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Pony"
+then     
+    5@ = #PONY    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "FBIWashington"
+then     
+    5@ = #FBICAR    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Moonbeam"
+then     
+    5@ = #MOONBEAM    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Pony"
+then     
+    5@ = #PONY    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Esperanto"
+then     
+    5@ = #ESPERANT    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Taxi"
+then     
+    5@ = #TAXI    
+    0050: gosub @request_vehicle
+    return   
+end
+
+
+00D6: if
+0ADC:   test_cheat "Washington"
+then     
+    5@ = #WASHING    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Bobcat"
+then     
+    5@ = #BOBCAT    
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "MrWhoopee"
+then     
+    5@ = #MRWHOOP
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "BFInjection"
+then     
+    5@ = #BFINJECT
+    0050: gosub @request_vehicle
+    return   
+end
+
+00D6: if
+0ADC:   test_cheat "Hunter"
+then     
+    5@ = #HUNTER
+    0050: gosub @request_vehicle
+    return   
+end
+
+/*
+COPY&PASTE NEW "IF" CHECKS TO ADD MORE VEHICLE TO THIS SCRIPT!
+Vehicle List: https://github.com/WastedHymn/Grand-Theft-Auto-Vice-City-Scripts/blob/master/vehicleList.txt
+
+00D6: if
+0ADC:   test_cheat "VehicleName"
+then     
+    5@ = #VehicleNameModelCode
+    0050: gosub @request_vehicle
+    return   
+end  
+*/        
+
+
+return
+        
+:request_vehicle
+0001: wait 0 ms
+0247: request_model 5@
+00D6: if
+0248:   model 5@ available
+004D: jump_if_false @request_vehicle
+gosub @create_vehicle
+return
+
+:create_vehicle
+0001: wait 0 ms
+gosub @create_coordinate
+00A5: 3@ = create_car 5@ at 0@ 1@ 2@
+01C3: mark_car_as_no_longer_needed 3@
+0249: release_model 5@
+0ACA: show_text_box "Vehicle Cheat"
+0001: wait 100 ms
+return
+
+:create_coordinate
+0001: wait 0 ms
+04C4: create_coordinate 0@ 1@ 2@ from_actor $PLAYER_ACTOR offset 0.0 4.0 0.0
+0395: clear_area 1 at 0@ 1@ 2@ range 1.0
+return

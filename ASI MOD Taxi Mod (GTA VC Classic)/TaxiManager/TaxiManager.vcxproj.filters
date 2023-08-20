@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="TaxiManager.cpp" />
+    <ClCompile Include="Destinations.cpp" />
+    <ClCompile Include="InputUtils.cpp" />
+    <ClCompile Include="TaxiUtils.cpp" />
+    <ClCompile Include="TextUtils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DestinationInformation.h" />
+    <ClInclude Include="Destinations.h" />
+    <ClInclude Include="InputUtils.h" />
+    <ClInclude Include="TaxiStatus.h" />
+    <ClInclude Include="TaxiUtils.h" />
+    <ClInclude Include="TextInformation.h" />
+    <ClInclude Include="TextUtils.h" />
+  </ItemGroup>
+</Project>

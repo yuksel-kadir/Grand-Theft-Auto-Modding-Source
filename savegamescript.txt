@@ -1,0 +1,62 @@
+{$CLEO .cs}
+0000: NOP
+/*
+Mod: Save Anywhere
+Author: WastedHymn 
+Date: 27.02.2022 
+*/
+
+03A4: script_name 'SaveAny'
+
+
+:script_start
+0001: wait 100 ms
+00D6: if
+00E0:   player $PLAYER_CHAR in_any_car
+then
+0002: jump @script_start
+else
+00D6: if and
+ 0ADC:   test_cheat "SAVEGAME"
+ 0038:   $ONMISSION == 0 // $ == int 
+004D: jump_if_false @script_start
+0002: jump @save_begin
+end
+
+
+:save_begin
+0001: wait 100 ms
+$ONMISSON =1
+01B4: set_player $PLAYER_CHAR can_move 0
+03D8: show_save_screen
+
+:wait_saving
+00D6: if
+83D9:   not save_done
+then
+    0001: wait 100 ms    
+    0002: jump @wait_saving
+end    
+
+00D6: if
+0256:   player $PLAYER_CHAR defined
+then
+    0222: set_player $PLAYER_CHAR health_to 100
+    01B4: set_player $PLAYER_CHAR can_move 0
+end
+0002: jump @save_end
+
+:save_end
+0001: wait 100 ms
+//IF YOU DON'T CHECK "PLAYER CHAR" GAME CRASHES!
+:check_char
+if
+    0256:   player $PLAYER_CHAR defined
+then
+    01B4: set_player $PLAYER_CHAR can_move 1
+    $ONMISSION = 0
+    0ACA: show_text_box "Save Cheat"
+else
+0002: jump @check_char
+end
+0002: jump @script_start

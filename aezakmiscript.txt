@@ -1,0 +1,34 @@
+{$CLEO .cs}
+/*
+Mod: AEZAKMI Cheat
+Author: WastedHymn
+Date: 01.03.2022
+*/
+
+0000: NOP
+//CHEAT ACTIVITY VARIABLE 0 = OFF, 1 = ON
+0006: 0@ = 0 // @ = int
+
+:script_start
+0001: wait 0 ms
+00D6: if
+0ADC:   test_cheat "AEZAKMI"
+004D: jump_if_false @script_start
+00D6: if
+0039:   0@ == 0 // @ == int
+then
+01F7: set_player $PLAYER_CHAR ignored_by_cops_state_to 1
+01F0: set_max_wanted_level_to 0
+03C7: set_sensitivity_to_crime_to 0
+0110: clear_player $PLAYER_CHAR wanted_level
+0006: 0@ = 1 // @ = int
+03E5: text_box 'CHEAT5'
+else
+01F7: set_player $PLAYER_CHAR ignored_by_cops_state_to 0
+01F0: set_max_wanted_level_to 6
+03C7: set_sensitivity_to_crime_to 1.0
+0006: 0@ = 0 // @ = int
+03E5: text_box 'CHEAT5'
+end
+
+jump @script_start

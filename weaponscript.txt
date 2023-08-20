@@ -1,0 +1,124 @@
+{$CLEO .cs}
+/*
+Mod: GUNSGUNSGUNS CHEAT
+Author: WastedHymn
+Date: 26.02.2022
+*/
+0000: NOP
+
+const
+NUCKLE_MODEL = #BRASSKNUCKLE
+WEAPON_MODEL1 = 1
+NIGHTSTICK_MODEL = #NITESTICK
+WEAPON_MODEL2 = 4
+GRENADE_MODEL = #GRENADE
+WEAPON_MODEL3 = 13
+COLT45_MODEL = #COLT45
+WEAPON_MODEL4 = 17
+SPAS_MODEL = #SHOTGSPA
+WEAPON_MODEL5 = 20
+UZI_MODEL = #UZI
+WEAPON_MODEL6 = 23
+M4_MODEL = #M4
+WEAPON_MODEL7 =  26
+M60_MODEL = #M60
+WEAPON_MODEL8 =  32
+SNIPER_MODEL = #SNIPER
+WEAPON_MODEL9 = 28
+end
+
+:start_label
+0001: wait 500 ms
+00D6: if
+0ADC:   test_cheat "GUNSGUNSGUNS"
+004D: jump_if_false @start_label
+0002: jump @load_nuckle
+
+:load_nuckle
+0001: wait 0 ms
+0247: request_model NUCKLE_MODEL
+00D6: if
+0248:   model NUCKLE_MODEL available
+004D: jump_if_false @load_nuckle
+
+:load_stick
+0001: wait 0 ms
+0247: request_model NIGHTSTICK_MODEL
+00D6: if
+0248:   model NIGHTSTICK_MODEL available
+004D: jump_if_false @load_stick
+
+:load_grenade  
+0001: wait 0 ms
+0247: request_model GRENADE_MODEL
+00D6: if
+0248:   model GRENADE_MODEL available
+004D: jump_if_false @load_grenade
+
+:load_colt
+0001: wait 0 ms
+0247: request_model COLT45_MODEL
+00D6: if
+0248:   model COLT45_MODEL available
+004D: jump_if_false @load_colt
+
+:load_spas
+0001: wait 0 ms
+0247: request_model SPAS_MODEL
+00D6: if
+0248:   model SPAS_MODEL available
+004D: jump_if_false @load_spas
+
+:load_uzi
+0001: wait 0 ms
+0247: request_model UZI_MODEL
+00D6: if
+0248:   model UZI_MODEL available
+004D: jump_if_false @load_uzi
+//01B1: give_player $PLAYER_CHAR weapon WEAPON_MODEL6 ammo 900
+
+:load_m4
+0001: wait 0 ms
+0247: request_model M4_MODEL
+00D6: if
+0248:   model M4_MODEL available
+004D: jump_if_false @load_m4
+
+:load_m60
+0001: wait 0 ms
+0247: request_model M60_MODEL
+00D6: if
+0248:   model M60_MODEL available
+004D: jump_if_false @load_m60
+
+:load_sniper
+0001: wait 0 ms
+0247: request_model SNIPER_MODEL
+00D6: if
+0248:   model SNIPER_MODEL available
+004D: jump_if_false @load_sniper 
+0002: jump @release_models
+
+:release_models
+0001: wait 0 ms
+01B1: give_player $PLAYER_CHAR weapon WEAPON_MODEL1 ammo 1 // Load the weapon model before using this
+01B1: give_player $PLAYER_CHAR weapon WEAPON_MODEL2 ammo 1
+01B1: give_player $PLAYER_CHAR weapon WEAPON_MODEL3 ammo 50
+01B1: give_player $PLAYER_CHAR weapon WEAPON_MODEL4 ammo 900
+01B1: give_player $PLAYER_CHAR weapon WEAPON_MODEL5 ammo 900
+01B1: give_player $PLAYER_CHAR weapon WEAPON_MODEL6 ammo 900
+01B1: give_player $PLAYER_CHAR weapon WEAPON_MODEL7 ammo 900
+01B1: give_player $PLAYER_CHAR weapon WEAPON_MODEL8 ammo 900
+01B1: give_player $PLAYER_CHAR weapon WEAPON_MODEL9 ammo 900
+03E5: text_box 'CHEAT2'
+
+0249: release_model NUCKLE_MODEL
+0249: release_model NIGHTSTICK_MODEL
+0249: release_model GRENADE_MODEL
+0249: release_model COLT45_MODEL
+0249: release_model SPAS_MODEL
+0249: release_model UZI_MODEL
+0249: release_model M4_MODEL
+0249: release_model M60_MODEL
+0249: release_model SNIPER_MODEL               	
+0002: jump @start_label

@@ -1,0 +1,24 @@
+{$CLEO .cs}
+0000: NOP
+while true
+    wait 100 ms
+    if
+        0AB0: key_pressed 0x01
+        then
+        0247: request_model #FAGGIO
+            if
+            0248:   model #FAGGIO available 
+            then
+                04C4: create_coordinate 1@ 2@ 3@ from_actor $PLAYER_ACTOR offset 0.0 5.0 -1.0 
+                00A5: 0@ = create_car #FAGGIO at 1@ 2@ 3@
+                0172: 1@ = actor $PLAYER_ACTOR z_angle 
+                0175: set_car 0@ z_angle_to 1@
+                04BA: set_car 0@ speed_instantly 100.0 
+                0249: release_model #FAGGIO
+                01C3: mark_car_as_no_longer_needed 0@ 
+            else
+            end 
+     else
+     end
+end
+004E: end_thread 
