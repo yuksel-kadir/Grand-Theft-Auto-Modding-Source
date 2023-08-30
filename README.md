@@ -61,6 +61,7 @@ __Some code snippets and documentation resources for Grand Theft Auto games.__
 [RE:LCS Build](https://drive.google.com/file/d/10SVHpIbHvGF8sLJjcORNejCt3SZp99ua/view?usp=sharing)<br/>
 [GTA Sa Compact](https://web.archive.org/web/20221130223910/https://github.com/codenulls/gta-reversed/files/6949371/gta_sa.zip)<br/>
 [Old Game Websites](https://museum.rockstarnexus.com/)
+[Decompiled GXT Files](https://web.archive.org/web/20171028075956/http://public.sannybuilder.com/GXT/)
 <!--
 ### Some Useful Opcode Descriptions
 [**0ADC**: Check if the player has typed a specified text.](https://gtamods.com/wiki/0ADC)<br/>
