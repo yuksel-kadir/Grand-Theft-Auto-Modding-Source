@@ -29,56 +29,28 @@ public:
                 keyPressTime = CTimer::m_snTimeInMilliseconds;
                 // Find player ped pointer.
                 CPlayerPed *player = FindPlayerPed();
-                if (player != NULL)
+                if (player != nullptr)
                 {
-                    // Get some player info to check before calling "ACTIVATE_SAVE_MENU" command.
-                    bool isDrowning = player->m_nPedFlags.bIsDrowning;
-                    bool isInVehicle = player->m_bInVehicle;
-                    bool isPlayerOnAMission = CTheScripts::IsPlayerOnAMission();
+                    // Get some player info to check before calling "ACTIVATE_SAVE_MENU" command.                                        
+                    bool isInAir = player->m_nPedFlags.bIsInTheAir;
+                    bool isPlayerOnAMission = CTheScripts::IsPlayerOnAMission();                    
                     auto playerState = player->m_ePedState;
                     int wantedLevel = player->m_pWanted->m_nWantedLevel;
+                    int interiorId = injector::ReadMemory<int>(0x978810, false); //Read interior value from "0x978810". More info -> https://gtamods.com/wiki/Memory_Addresses_(VC)#CGame
                     /*
-                     * Check these states:
-                     * Player is not on a mission
-                     * Player is not in a vehicle.
-                     * Player is not drowning.
-                     * Player is not wanted by cops.
-                     * Player is not falling.
-                     * Player is not jumping.
+                     * Check these player states:
+                     * Is idle  
+                     * Not on a mission
+                     * Wamted level is lower than 1
+                     * Is not in interior (id of the outside is 0.)
                      * Player States and Flags Information = https://github.com/DK22Pac/plugin-sdk/blob/master/plugin_vc/game_vc/CPed.h
                      */
-                    if (!isPlayerOnAMission)
-                    {
-                        if (!isInVehicle)
-                        {
-                            if (wantedLevel < 1)
-                            {
-                                if (playerState != ePedState::PEDSTATE_FALL && playerState != ePedState::PEDSTATE_JUMP)
-                                {
-                                    CHud::SetHelpMessage("Quick Save", true, false);
+                    if (!isPlayerOnAMission && wantedLevel < 1 && playerState == ePedState::PEDSTATE_IDLE && !isInAir && interiorId == 0)
+                    {                        
+                                    //FrontEndMenuManager.m_bSaveMenuActive = true;
                                     Command<Commands::ACTIVATE_SAVE_MENU>();
-                                }
-                            }
-                            else
-                            {
-                                CHud::SetHelpMessage("You can't save when you have a wanted level.", true, false);
-                            }
-                        }
-                        else
-                        {
-                            CHud::SetHelpMessage("You can't save when you are in a vehicle.", true, false);
-                        }
-                    }
-                    else
-                    {
-                        CHud::SetHelpMessage("You can't save when you are on a mission.", true, false);
-                    }
-                    /* Shorter way without help messages.
-                    if (!isPlayerOnAMission && !isInVehicle && !isDrowning && wantedLevel < 1 && playerState != ePedState::PEDSTATE_FALL && playerState != ePedState::PEDSTATE_JUMP) {
-                        CHud::SetHelpMessage("Quick Save", true, false);
-                        Command<Commands::ACTIVATE_SAVE_MENU>();
-                    }
-                    */
+                                    CHud::SetHelpMessage("Quick Save", true, false);                                    
+                    }                   
                 }
             }
         };
