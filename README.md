@@ -26,6 +26,7 @@ __Some code snippets and documentation resources for Grand Theft Auto games.__
 - [GTA Vice City GXT File](http://public.sannybuilder.com/GXT/old/GTAVC.text)
 - [GTA San Andreas GXT File](https://public.sannybuilder.com/GXT/old/GTASA.text)
 - [Plugin-SDK Examples](https://github.com/DK22Pac/plugin-sdk/tree/master/examples)
+- [Vice City Global Variables Id List](https://github.com/sannybuilder/data/blob/master/vc_sbl/CustomVariables.ini)
 <br/>
 
 ### Redux Mods Descriptions
